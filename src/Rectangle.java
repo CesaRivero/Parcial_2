@@ -6,11 +6,15 @@ public class Rectangle extends Shape{
     Rectangle(){
         this.setWidth(width = 1.0);
         this.setLength(length = 1.0);
+        this.setArea(area = width * length);
+        this.setPerimeter(perimeter = (2*width) + (2*length));
     }
 
     Rectangle(double width,double length){
         this.setWidth(width);
         this.setLength(length);
+        this.setArea(area = width * length);
+        this.setPerimeter(perimeter = (2*width) + (2*length));
     }
 
     Rectangle(double width,double length,String color, boolean filled){
@@ -18,6 +22,8 @@ public class Rectangle extends Shape{
         this.setLength(length);
         this.setColor(color);
         this.setFilled(filled);
+        this.setArea(area = width * length);
+        this.setPerimeter(perimeter = (2*width) + (2*length));
     }
 
 
@@ -38,17 +44,24 @@ public class Rectangle extends Shape{
     }
 
     public double getArea(){
-        double area = width * length;
-        return this.getArea();
+
+        return this.area;
+    }
+    public void setArea(double area){
+
+        this.area=area;
     }
 
     public double getPerimeter(){
-        double perimeter = (2*width) + (2*length);
-        return this.getPerimeter();
+        return this.perimeter;
+    }
+    public void setPerimeter(double perimeter){
+
+        this.perimeter = perimeter;
     }
 
     public String toString(){
-        return String.format("Rectangle[color=%s,filled=%b,width=%f,length=%f]",this.getColor(),this.isFilled(),this.getWidth(),this.getLength());
+        return String.format("Rectangle[color=%s,filled=%b,width=%f,length=%f, Perimeter= %f, Area= %f]",this.getColor(),this.isFilled(),this.getWidth(),this.getLength(),this.getPerimeter(),this.getArea());
     }
 
 

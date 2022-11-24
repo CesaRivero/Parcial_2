@@ -1,6 +1,8 @@
 public abstract class Shape {
     public String color;
     public boolean filled;
+    public double area ;
+    public double perimeter ;
 
 
     public String getColor() {
@@ -19,7 +21,6 @@ public abstract class Shape {
         this.filled = filled;
     }
 
-
     Shape(){
         this.color = "red";
         this.filled = true;
@@ -30,10 +31,8 @@ public abstract class Shape {
       this.setFilled(filled);
 
     }
-
     public abstract double getArea();
     public abstract double getPerimeter();
-
     public String toString(){
       return String.format("Shape[color=%s,filled=%b]",this.getColor(),this.isFilled());
     }

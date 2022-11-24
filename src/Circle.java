@@ -4,16 +4,22 @@ public class Circle extends Shape{
 
     Circle(){
         this.setRadius(radius = 1.0);
+        this.setArea(area= 3.14 * (radius*radius));
+        this.setPerimeter(perimeter = 3.14 * 2 * radius);
     }
 
     Circle(double radius){
        this.setRadius(radius);
+        this.setArea(area= 3.14 * (radius*radius));
+        this.setPerimeter(perimeter = 3.14 * 2 * radius);
     }
 
     Circle(double radius, String color, Boolean filled){
         this.setColor(color);
         this.setRadius(radius);
         this.setFilled(filled);
+        this.setArea(area= 3.14 * (radius*radius));
+        this.setPerimeter(perimeter = 3.14 * 2 * radius);
     }
 
     public double getRadius() {
@@ -24,18 +30,28 @@ public class Circle extends Shape{
         this.radius = radius;
     }
 
+    public void setArea(double area){
+
+        this.area=area;
+    }
     public double getArea(){
-      double area = 3.14 * (radius*radius);
-      return this.getArea();
+
+
+        return this.area;
     }
 
-    public double getPerimeter(){
-        double perimeter = 3.14 * 2 * radius;
-        return this.getPerimeter();
+    public void setPerimeter(double perimeter){
+
+        this.perimeter = perimeter;
     }
+    public double getPerimeter(){
+        return this.perimeter;
+    }
+
+
 
     public String toString(){
-        return String.format("Circle[color=%s,filled=%b,radius=%f]",this.getColor(),this.isFilled(),this.getRadius());
+        return String.format("Circle[Color= %s, Filled= %b, Radius= %f, Perimeter= %f, Area= %f]",this.getColor(),this.isFilled(),this.getRadius(),this.getPerimeter(),this.getArea());
     }
 
 

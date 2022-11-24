@@ -10,7 +10,11 @@ public class Main {
         s2.setFilled(true);
         s2.setColor("blue");
 
-        System.out.println(String.format("Esta lleno=%b\nColor=%s\nRadio=%f\nPerimetro del circulo=%f\nArea del circulo=%f", s1.isFilled(),s1.getColor(), ((Circle) s1).getRadius(),s1.getPerimeter(),s1.getArea()));
+
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+        System.out.println(s4);
 
     }
 }
