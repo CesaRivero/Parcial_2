@@ -43,12 +43,12 @@ public class Rectangle extends Shape{
     }
 
     public double getPerimeter(){
-        double perimeter = 3.14 * 2 * radius;
+        double perimeter = (2*width) + (2*length);
         return this.getPerimeter();
     }
 
     public String toString(){
-        return String.format("Circle[color=%s,filled=%b,radius=%f]",this.getColor(),this.isFilled(),this.getRadius());
+        return String.format("Circle[color=%s,filled=%b,width=%f,length=%f]",this.getColor(),this.isFilled(),this.getWidth(),this.getLength());
     }
 
 
