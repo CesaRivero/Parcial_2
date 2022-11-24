@@ -35,20 +35,15 @@ public class Circle extends Shape{
         this.area=area;
     }
     public double getArea(){
-
-
         return this.area;
     }
 
     public void setPerimeter(double perimeter){
-
         this.perimeter = perimeter;
     }
     public double getPerimeter(){
         return this.perimeter;
     }
-
-
 
     public String toString(){
         return String.format("Circle[Color= %s, Filled= %b, Radius= %f, Perimeter= %f, Area= %f]",this.getColor(),this.isFilled(),this.getRadius(),this.getPerimeter(),this.getArea());

@@ -1,0 +1,15 @@
+@startuml
+class Circle {
++ double radius
++ double getRadius()
++ void setRadius(double)
++ void setArea(double)
++ double getArea()
++ void setPerimeter(double)
++ double getPerimeter()
++ String toString()
+}
+
+
+Shape <|-- Circle
+@enduml

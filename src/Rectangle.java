@@ -9,14 +9,12 @@ public class Rectangle extends Shape{
         this.setArea(area = width * length);
         this.setPerimeter(perimeter = (2*width) + (2*length));
     }
-
     Rectangle(double width,double length){
         this.setWidth(width);
         this.setLength(length);
         this.setArea(area = width * length);
         this.setPerimeter(perimeter = (2*width) + (2*length));
     }
-
     Rectangle(double width,double length,String color, boolean filled){
         this.setWidth(width);
         this.setLength(length);
@@ -25,7 +23,6 @@ public class Rectangle extends Shape{
         this.setArea(area = width * length);
         this.setPerimeter(perimeter = (2*width) + (2*length));
     }
-
 
     public double getWidth() {
         return width;
