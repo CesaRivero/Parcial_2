@@ -34,4 +34,8 @@ public class Square extends Rectangle{
         this.width = side;
     }
 
+    public String toString(){
+        return String.format("Square [Rectangle[color=%s,filled=%b,width=%f,length=%f]]",this.getColor(),this.isFilled(),this.getWidth(),this.getLength());
+    }
+
 }

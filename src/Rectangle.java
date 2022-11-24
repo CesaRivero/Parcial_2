@@ -48,7 +48,7 @@ public class Rectangle extends Shape{
     }
 
     public String toString(){
-        return String.format("Circle[color=%s,filled=%b,width=%f,length=%f]",this.getColor(),this.isFilled(),this.getWidth(),this.getLength());
+        return String.format("Rectangle[color=%s,filled=%b,width=%f,length=%f]",this.getColor(),this.isFilled(),this.getWidth(),this.getLength());
     }
 
 
